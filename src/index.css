@@ -1,0 +1,137 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--black);
+  background: var(--blue-light);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --black: #2e384d;
+  --white: #e2e8fd;
+  --blue-light: #b2d1eb;
+  --blue-dark: #86b2d5;
+  --pink: #ed5994;
+  --yellow: #f7ecb5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--blue-light);
+}
+
+
+.container {
+  flex: 1;
+  padding: 5rem;
+  color: var(--white);
+  font-size: 1rem;
+}
+
+.container h1 {
+  color: var(--pink);
+  text-transform: uppercase;
+}
+
+.container p {
+  font-size: 1rem;
+  color: var(--black);
+}
+
+footer {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--black);
+  margin: 2rem auto;
+  flex: 1;
+  text-align: center;
+}
+
+
+/* Sections */
+
+.content-box {
+  background: var(--white);
+  padding: 1.5rem 2rem;
+  margin: 2rem auto;
+  border-radius: 6px;
+}
+
+.content-box form {
+  display: flex;
+  flex: 1;
+}
+
+.content-box input {
+  padding: 2rem;
+  background: var(--blue-light);
+  border: 0;
+  border-radius: 6px;
+  flex: 1;
+  outline: none;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.content-box button {
+  padding: 1rem;
+  background: var(--blue-light);
+  flex: 0.2;
+  font-size: 1rem;
+  color: var(--black);
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  cursor: pointer;
+  outline: none;
+  transition: filter 0.2s;
+  border-left: 2px solid var(--white);
+  border-radius: 0 6px 6px 0;
+}
+
+.content-box button:hover {
+  filter: opacity(0.8);
+}
+
+.notesContainer {
+
+  background: var(--white);
+  height: 100%;
+  color: var(--black);
+
+  border-radius: 6px;
+  box-shadow: 0 0 rgb(0, 0, 0, 0, 05);
+  padding: 1.5rem 2rem;
+
+
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 2rem;
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.note {
+  margin: 10px;
+  background: var(--blue-light);
+  padding: 1.5rem 2rem;
+  margin-bottom: 0.4rem;
+  flex: 1 1 200px;
+  border-bottom: 2px solid var(--pink);
+}
+
+.note p {
+  margin-bottom: 1rem;
+}
