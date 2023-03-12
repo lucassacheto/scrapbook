@@ -9,12 +9,12 @@ function Login() {
     const [name, setName] = useState(" ")
 
     function handleUser(e){
-        setName(e.target.value)
+        setName(e.target.value.toLocaleLowerCase().replace(/^\s+|\s+$/gm,''))
     }
 
     return (
         <div className="content-box">
-            <input type="text" onChange={handleUser} name="userName" value={name} id="userName" placeholder="Choose your name" />
+            <input type="text" onChange={handleUser} name="userName" value={name} id="userName" />
             <button 
                 onClick={() => { 
                     dispatch(user(name));

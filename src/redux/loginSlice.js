@@ -14,10 +14,14 @@ export const loginSlice = createSlice({
         state.value = action.payload
         localStorage.setItem("userName", JSON.stringify(action.payload))
     },
+    logout: (state, action) => {
+      state.value = action.payload
+      localStorage.removeItem("userName")
+    }
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { user } = loginSlice.actions
+export const { user, logout } = loginSlice.actions
 
 export default loginSlice.reducer

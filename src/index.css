@@ -33,7 +33,7 @@ body {
 
 .container {
   flex: 1;
-  padding: 5rem;
+  padding: 2rem;
   color: var(--white);
   font-size: 1rem;
 }
@@ -65,38 +65,34 @@ footer {
   padding: 1.5rem 2rem;
   margin: 2rem auto;
   border-radius: 6px;
-}
-
-.content-box form {
   display: flex;
-  flex: 1;
+  position: relative;
 }
 
 .content-box input {
-  padding: 2rem;
   background: var(--blue-light);
   border: 0;
   border-radius: 6px;
-  flex: 1;
   outline: none;
-  font-size: 2rem;
-  font-weight: 300;
+  padding: 24px;
+  font-size: 20px;
+  width: 100%;
+  color: var(--black);
 }
 
+
 .content-box button {
-  padding: 1rem;
   background: var(--blue-light);
-  flex: 0.2;
   font-size: 1rem;
   color: var(--black);
   border: 0;
-  text-transform: uppercase;
-  font-weight: 300;
   cursor: pointer;
   outline: none;
   transition: filter 0.2s;
   border-left: 2px solid var(--white);
   border-radius: 0 6px 6px 0;
+  padding: 20px;
+  font-size: 20px;
 }
 
 .content-box button:hover {
