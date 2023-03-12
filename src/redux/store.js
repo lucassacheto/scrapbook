@@ -5,6 +5,7 @@ import loginSlice from './loginSlice'
 export const store = configureStore({
   reducer: {
     scrap: scrapSlice,
-    login: loginSlice
+    login: loginSlice,
+    logout: loginSlice
   },
 })
